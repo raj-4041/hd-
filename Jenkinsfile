@@ -1,6 +1,10 @@
 pipeline {
     agent any
-    
+
+    tools {
+        nodejs 'NodeJS 14'  // This is the name you set in the NodeJS configuration
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -11,13 +15,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                // Add your testing steps here
+                // Add testing commands here if any
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // Add your deployment steps here
+                // Add deployment steps here if any
             }
         }
     }
