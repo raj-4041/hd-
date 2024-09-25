@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"  // This will run Jest for testing
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,6 @@
     "express": "^4.21.0"
   },
   "devDependencies": {
-    "jest": "^29.0.0",  // Jest installed as a dev dependency
-    "eslint": "^8.0.0"  // ESLint installed as a dev dependency (if you want to use linting)
+    "jest": "^29.0.0"
   }
 }
